@@ -3,7 +3,6 @@
  * Author: Dr. Mark E. Lehr
  * Created on February 2, 2012, 10:18 AM
  * Additions using BigInt
- * I am making a change to this file right here
  */
 
 #include <cstdlib>
@@ -17,8 +16,8 @@ bool numberAdd(char [],char [],char []);
 
 int main(int argc, char** argv) {
     //Create the test numbers using character arrays
-    char number1[]="0011111111";
-    char number2[]="0101010101";
+    char number1[]="123456712345670777";
+    char number2[]="111111111111111234";
     char result[sizeResult(number1,number2)];
     //Add the numbers
     cout<<number1<<endl;
@@ -60,8 +59,8 @@ int sizeResult(char n1[],char n2[]){
 bool digitAdd(char n1,char n2,char &d,bool c){
     int i1=n1-48,i2=n2-48;
     int sum=i1+i2+c;
-    d=sum%2+48;
-    return sum/2;
+    d=sum%8+48;
+    return sum/8;
 }
 
 int length(char a[]){
