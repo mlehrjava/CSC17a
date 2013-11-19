@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
- * Created on February 2, 2012, 10:18 AM
+ * Created on Feblruary 2, 2012, 10:18 AM
  * Additions using BigInt
  */
 
