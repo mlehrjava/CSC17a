@@ -3,6 +3,7 @@
  * Author: Dr. Mark E. Lehr
  * Created on February 2, 2012, 10:18 AM
  * Additions using BigInt
+ * BEWARE....YOU ARE ABOUT TO ENTER THE LAIR OF LEHR!!!
  */
 
 #include <cstdlib>
