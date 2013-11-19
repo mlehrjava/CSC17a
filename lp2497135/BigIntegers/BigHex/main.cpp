@@ -2,8 +2,7 @@
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
  * Created on February 2, 2012, 10:18 AM
- * Additions using BigInt
- * I am making a change to this file right here
+ * Additions using BigHex
  */
 
 #include <cstdlib>
@@ -17,8 +16,8 @@ bool numberAdd(char [],char [],char []);
 
 int main(int argc, char** argv) {
     //Create the test numbers using character arrays
-    char number1[]="0011111111";
-    char number2[]="0101010101";
+    char number1[]="0ABCDEF";
+    char number2[]="0123451";
     char result[sizeResult(number1,number2)];
     //Add the numbers
     cout<<number1<<endl;
@@ -59,9 +58,15 @@ int sizeResult(char n1[],char n2[]){
 
 bool digitAdd(char n1,char n2,char &d,bool c){
     int i1=n1-48,i2=n2-48;
+    if(n1>=65)i1=n1-55;
+    if(n2>=65)i2=n2-55;
     int sum=i1+i2+c;
-    d=sum%2+48;
-    return sum/2;
+    if(sum%16>9){
+        d=sum%16+55;
+    }else{
+        d=sum%16+48;
+    }
+    return sum/16;
 }
 
 int length(char a[]){
