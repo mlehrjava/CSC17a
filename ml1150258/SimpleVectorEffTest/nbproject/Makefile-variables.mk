@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=simplevectortest
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/simplevectortest
+CND_ARTIFACT_NAME_Debug=simplevectorefftest
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/simplevectorefftest
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=simplevectortest.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/simplevectortest.tar
+CND_PACKAGE_NAME_Debug=simplevectorefftest.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/simplevectorefftest.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=simplevectortest
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/simplevectortest
+CND_ARTIFACT_NAME_Release=simplevectorefftest
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/simplevectorefftest
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=simplevectortest.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/simplevectortest.tar
+CND_PACKAGE_NAME_Release=simplevectorefftest.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/simplevectorefftest.tar
 #
 # include compiler specific variables
 #

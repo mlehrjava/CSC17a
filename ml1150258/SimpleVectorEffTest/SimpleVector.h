@@ -19,13 +19,14 @@ class SimpleVector
 private:
    T *aptr;          // To point to the allocated array
    int arraySize;    // Number of elements in the array
+   int maxSize;
    void memError();  // Handles memory allocation errors
    void subError();  // Handles subscripts out of range
 
 public:
    // Default constructor
    SimpleVector()
-      { aptr = 0; arraySize = 0;}
+      { aptr = 0; arraySize = 0; maxSize=0;}
       
    // Constructor declaration
    SimpleVector(int);
@@ -39,6 +40,9 @@ public:
    // Accessor to return the array size
    int size() const
       { return arraySize; }
+   // Accessor to return the array size
+   int msize() const
+      { return maxSize; }
 
    // Accessor to return a specific element
    T getElementAt(int position);
@@ -60,13 +64,18 @@ public:
    //Push a value onto the array
    template <class T>
    void SimpleVector<T>::push(T val){
-       T *temp=new T[++arraySize];
-       for(int i=0;i<arraySize-1;i++){
-           temp[i]=aptr[i];
+       if(maxSize==arraySize++){
+                maxSize*=2;
+                T *temp=new T[maxSize];
+                for(int i=0;i<arraySize-1;i++){
+                        temp[i]=aptr[i];
+                }
+                delete []aptr;
+                temp[arraySize-1]=val;
+                aptr=temp;
+       }else{
+           aptr[arraySize-1]=val;
        }
-       temp[arraySize-1]=val;
-       delete []aptr;
-       aptr=temp;
    }
        
 //***********************************************************
@@ -77,12 +86,6 @@ public:
    template <class T>
    T SimpleVector<T>::pop(){
        T ret=aptr[--arraySize];
-       T *temp=new T[arraySize];
-       for(int i=0;i<arraySize;i++){
-           temp[i]=aptr[i];
-       }
-       delete []aptr;
-       aptr=temp;
        return ret;
    }
 //***********************************************************
@@ -94,6 +97,7 @@ template <class T>
 SimpleVector<T>::SimpleVector(int s)
 {
    arraySize = s;
+   maxSize=s;
    // Allocate memory for the array.
    try
    {
@@ -118,9 +122,10 @@ SimpleVector<T>::SimpleVector(const SimpleVector &obj)
 {
    // Copy the array size.
    arraySize = obj.arraySize;
+   maxSize = obj.maxSize;
    
    // Allocate memory for the array.
-   aptr = new T [arraySize];
+   aptr = new T [maxSize];
    if (aptr == 0)
       memError();
       
