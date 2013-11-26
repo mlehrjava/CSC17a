@@ -17,6 +17,7 @@ int main(){
 	cout << "Vector after push: " << endl;
 	vector.push(15);
 	vector.print();
+
 	cin.get();
 	return 0;
 }
