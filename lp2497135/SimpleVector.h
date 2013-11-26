@@ -179,19 +179,12 @@ void SimpleVector<T>::print(){
 *******************************************************/
 template <class T>
 void SimpleVector<T>::pop(){
-	--arraySize;
-   try{
-      pp = new T [arraySize];
-   }
-   catch (bad_alloc){
-      memError();
-   }
+   pp = new T [--arraySize];
    for (int count = 0; count < arraySize; count++)
       *(pp + count) = *(aptr + count);
    delete [] aptr;
    aptr = new T [arraySize];
-   for (int count = 0; count < arraySize; count++)
-      *(aptr + count) = *(pp + count);
+   aptr = pp;
    delete [] pp;
    return;
 }
@@ -200,15 +193,13 @@ void SimpleVector<T>::pop(){
 *******************************************************/
 template <class T>
 void SimpleVector<T>::push(T end){
-	++arraySize;
-    psh = new T [arraySize];
+    psh = new T [++arraySize];
     for (int count = 0; count < arraySize-1; count++)
        *(psh + count) = *(aptr + count);
 	*(psh + arraySize-1) = end;
 	delete [] aptr;
     aptr = new T [arraySize];
-    for (int count = 0; count < arraySize; count++)
-       *(aptr + count) = *(pp + count);
+	aptr = psh;
     delete [] psh;
 	return;
 }
