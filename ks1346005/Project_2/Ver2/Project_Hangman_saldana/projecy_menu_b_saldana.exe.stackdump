@@ -1,0 +1,9 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=68350A29
+eax=00000000 ebx=20048A5C ecx=20000038 edx=6836AACC esi=FFFFFFFF edi=0022AB08
+ebp=0022AC38 esp=0022AA70 program=F:\CIS 17A\Project\Projecy_Menu_B_saldana\dist\Debug\Cygwin_4.x-Windows\projecy_menu_b_saldana.exe, pid 2504, thread main
+cs=001B ds=0023 es=0023 fs=003B gs=0000 ss=0023
+Stack trace:
+Frame     Function  Args
+0022AC38  68350A29 (00000001, 0022AC5C, 20010100, 61007F58)
+0022ACF8  61007FB5 (00000000, 0022CD84, 61007120, 00000000)
+End of stack trace
