@@ -1,0 +1,11 @@
+Name: 
+Race: Dwarf
+Class: Rogue
+Hit Points: 15
+Strength: 7
+Intellect: 5
+Dexterity: 6
+Balance: 9
+Charisma: 4
+Wisdom: 5
+

@@ -1,0 +1,132 @@
+# depslib dependency file v1.0
+1386270413 source:d:\documents\csc-17a souce code\projects\project 2 v2\character.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<string>
+	"character.h"
+
+1386213358 d:\documents\csc-17a souce code\projects\project 2 v2\character.h
+	<string>
+
+1386270299 source:d:\documents\csc-17a souce code\projects\project 2 v2\main.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	"character.h"
+	"monsters.h"
+
+1386269016 d:\documents\csc-17a souce code\projects\project 2 v2\monsters.h
+	<string>
+
+1386269016 source:d:\documents\csc-17a souce code\projects\project 2 v2\monsters.cpp
+	<cstdlib>
+	<iostream>
+	<ctime>
+	"monsters.h"
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\character.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<string>
+	"character.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\character.h
+	<string>
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\monsters.cpp
+	<cstdlib>
+	<iostream>
+	<ctime>
+	"monsters.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\monsters.h
+	<string>
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\main.cpp
+	"character.h"
+	"monsters.h"
+	"map.h"
+	"game.h"
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\map.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	<cmath>
+	"map.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\map.h
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\game.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	<cmath>
+	"game.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\game.h
+	"map.h"
+	"character.h"
+	"monsters.h"
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\character.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<string>
+	"character.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\character.h
+	<string>
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\game.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	<cmath>
+	"game.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\game.h
+	"map.h"
+	"character.h"
+	"monsters.h"
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\map.h
+
+1386558874 c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\monsters.h
+	<string>
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\main.cpp
+	"character.h"
+	"monsters.h"
+	"map.h"
+	"game.h"
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\map.cpp
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<ctime>
+	<windows.h>
+	<cmath>
+	"map.h"
+
+1386558874 source:c:\users\terminator557\documents\github\47975\dp2399403\project 2 v2\project 2\monsters.cpp
+	<cstdlib>
+	<iostream>
+	<ctime>
+	"monsters.h"
+
